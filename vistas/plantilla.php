@@ -223,10 +223,18 @@
                             <i class="fa fa-address-card"></i> <span>autoprograma</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="reporte1">
-                            <i class="fa fa-check"></i> <span>reporte1</span>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i> <span>reportes</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
                         </a>
+                        <ul class="treeview-menu">
+                            <li><a href="reporte1"><i class="fa fa-circle-o"></i> usuario</a></li>
+                            <li><a href="reporte2"><i class="fa fa-circle-o"></i> programa</a></li>
+                            <li><a href="reporte3"><i class="fa fa-circle-o"></i> general</a></li>
+                        </ul>
                     </li>
                 </ul>
             </section>
@@ -248,8 +256,8 @@
                     $_GET["ruta"] == "autoprograma" ||
                     $_GET["ruta"] == "autoinstitucional" ||
                     $_GET["ruta"] == "reporte1" ||
-                    $_GET["ruta"] == "modernizacion" ||
-                    $_GET["ruta"] == "reparacion" ||
+                    $_GET["ruta"] == "reporte2" ||
+                    $_GET["ruta"] == "reporte3" ||
                     $_GET["ruta"] == "normalizacion"){
 
                     include "modulos/".$_GET["ruta"].".php";
