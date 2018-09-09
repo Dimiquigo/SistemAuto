@@ -391,7 +391,29 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            
+                    <?php     
+        /*=============================================
+        CONTENIDO
+        =============================================*/
+
+        if(isset($_GET["ruta"])){
+
+        if($_GET["ruta"] == "inicio" ||
+            $_GET["ruta"] == "nosotros" ||
+            $_GET["ruta"] == "politicas" ||
+            $_GET["ruta"] == "mantenimiento" ||
+            $_GET["ruta"] == "modernizacion" ||
+            $_GET["ruta"] == "reparacion" ||
+            $_GET["ruta"] == "normalizacion"){
+
+            include "modulos/".$_GET["ruta"].".php";
+        }else{
+            include "modulos/404.php";
+        }
+        }else{
+            include "modulos/inicio.php";
+        }            
+        ?>
         </div>
         <!-- /.content-wrapper -->
 
