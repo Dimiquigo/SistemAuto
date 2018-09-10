@@ -2,7 +2,7 @@ define(function () {
   // Spanish
   return {
     errorLoading: function () {
-      return 'No se pudieron cargar los resultados';
+      return 'La carga falló';
     },
     inputTooLong: function (args) {
       var remainingChars = args.input.length - args.maximum;
