@@ -225,9 +225,10 @@ MODAL AGREGAR USUARIO
 
                   <option value="Administrador">Administrador</option>
 
-                  <option value="Especial">Especial</option>
-
-                  <option value="Vendedor">Vendedor</option>
+             
+                  <option value="Profesor">Profesor</option>
+                  <option value="Estudiante">Estudiante</option>
+                  <option value="Administrativo">Administrativo</option>
 
                 </select>
 
@@ -370,10 +371,10 @@ MODAL EDITAR USUARIO
 
                   <option value="Administrador">Administrador</option>
 
-                  <option value="Especial">Especial</option>
-
-                  <option value="Vendedor">Vendedor</option>
-
+                  <option value="Profesor">Profesor</option>
+                  <option value="Estudiante">Estudiante</option>
+                  <option value="Administrativo">Administrativo</option>
+                
                 </select>
 
               </div>
